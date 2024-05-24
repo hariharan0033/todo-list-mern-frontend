@@ -1,4 +1,4 @@
-.home
+/* .home
 {
   display: flex;
   flex-direction: column;
@@ -42,4 +42,65 @@ font-size: 15px;
 .todoItem div .icon
 { 
   cursor: pointer;
+} */
+
+
+.home {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.todoItem:hover {
+  background-color: #f1f1f1;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox p {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.checkbox .icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.checkbox .icon:hover {
+  color: #4CAF50;
+}
+
+.crossed_out {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todoItem span .icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.todoItem span .icon:hover {
+  color: #f44336;
 }
